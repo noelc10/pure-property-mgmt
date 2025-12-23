@@ -1,6 +1,21 @@
 <script setup lang="ts">
+import { onMounted, onUnmounted } from 'vue'
+import { useRoute } from 'vue-router'
+
+import { useAgentStore } from '@/stores/agent'
+
 import AgentDetails from '@/components/agent/AgentDetails.vue'
 
+const route = useRoute()
+const store = useAgentStore()
+
+onMounted(async () => {
+  const agentId = route.params.id as string
+  await store.fetchAgent(agentId)
+})
+onUnmounted(() => {
+  store.clearAgent()
+})
 </script>
 
 <template>

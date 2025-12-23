@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { onMounted, onUnmounted } from 'vue'
 import { useAgentStore } from '@/stores/agent'
 import PropAgentList from '@/components/agent/AgentList.vue'
 import PropAgentForm from '@/components/agent/AgentForm.vue'
@@ -7,6 +7,7 @@ import PropAgentForm from '@/components/agent/AgentForm.vue'
 const store = useAgentStore()
 
 onMounted(async () => await store.fetchAgents())
+onUnmounted(() => store.clearAgents())
 </script>
 
 <template>

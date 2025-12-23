@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { computed, onMounted } from 'vue'
-import { useRoute } from 'vue-router'
+import { computed } from 'vue'
+
 import { useAgentStore } from '@/stores/agent'
 
-const route = useRoute()
 const store = useAgentStore()
 
 const agent = computed(() => store?.agent)
@@ -15,11 +14,6 @@ const createAtFormatted = computed(() => {
 const updatedAtFormatted = computed(() => {
   if (!store.agent) return ''
   return new Date(store.agent.updatedAt).toLocaleString()
-})
-
-onMounted(async () => {
-  const agentId = route.params.id as string
-  await store.fetchAgent(agentId)
 })
 </script>
 
@@ -53,7 +47,7 @@ onMounted(async () => {
             <v-list-item-subtitle class="text-body-1 text-black">{{ updatedAtFormatted }}</v-list-item-subtitle>
           </v-list-item>
         </v-list>
-        <div v-else>
+        <div v-if="!hasAgent">
           <v-alert type="info" class="ma-4">
             No agent found.
           </v-alert>

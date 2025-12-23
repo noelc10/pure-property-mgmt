@@ -1,6 +1,7 @@
 import { z } from 'zod'
 
 export interface AgentForm {
+  id: string | number
   firstName: string
   lastName: string
   email: string

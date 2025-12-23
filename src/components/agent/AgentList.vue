@@ -15,15 +15,15 @@ const store = useAgentStore()
           <v-list-item v-for="agent in store.agents" :key="(agent as AgentForm).id"
             :to="`/agents/${(agent as AgentForm).id}`">
             <v-list-item-title>{{ (agent as AgentForm).firstName }} {{ (agent as AgentForm).lastName
-            }}</v-list-item-title>
+              }}</v-list-item-title>
             <v-list-item-subtitle>{{ (agent as AgentForm).email }} | {{ (agent as AgentForm).mobileNumber
-            }}</v-list-item-subtitle>
+              }}</v-list-item-subtitle>
             <template #append>
-              <v-list-item-action end>
+              <v-list-item-action end @click.stop>
                 <v-tooltip location="top" text="Delete Property Agent">
                   <template #activator="{ props }">
                     <v-btn variant="text" density="comfortable" icon="mdi-delete" color="error" v-bind="props"
-                      @click="store.deleteAgent((agent as AgentForm).id)" />
+                      @click.stop.prevent="store.deleteAgent((agent as AgentForm).id)" />
                   </template>
                 </v-tooltip>
               </v-list-item-action>
