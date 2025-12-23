@@ -35,14 +35,5 @@ yarn
 yarn dev
 ```
 
-### Type-Check, Compile and Minify for Production
-
-```sh
-yarn build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-```
+### For backend, please look for this repository, follow the instructions and make sure that it both runs on your machine and that the frontend can connect to it:
+[Pure Property Mgmt. Backend](https://github.com/noelc10/pure-property-mgmt-be)
