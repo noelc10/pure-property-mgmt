@@ -30,6 +30,7 @@ const RAW_RUNTIME_STATE =
           ["@mdi/font", "npm:7.4.47"],\
           ["@tsconfig/node24", "npm:24.0.3"],\
           ["@types/node", "npm:24.10.4"],\
+          ["@vee-validate/zod", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:4.15.1"],\
           ["@vitejs/plugin-vue", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:6.0.3"],\
           ["@vue/eslint-config-prettier", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:10.2.0"],\
           ["@vue/eslint-config-typescript", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:14.6.0"],\
@@ -43,12 +44,14 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.6.2"],\
           ["sass", "npm:1.97.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=8c6c40"],\
+          ["vee-validate", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:4.15.1"],\
           ["vite", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:7.3.0"],\
           ["vite-plugin-vue-devtools", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:8.0.5"],\
           ["vue", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:3.5.26"],\
           ["vue-router", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:4.6.4"],\
           ["vue-tsc", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:3.2.1"],\
-          ["vuetify", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:3.11.4"]\
+          ["vuetify", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:3.11.4"],\
+          ["zod", "npm:4.2.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -1698,6 +1701,30 @@ const RAW_RUNTIME_STATE =
           ["@typescript-eslint/visitor-keys", "npm:8.50.1"],\
           ["@typescript-eslint/types", "npm:8.50.1"],\
           ["eslint-visitor-keys", "npm:4.2.1"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@vee-validate/zod", [\
+      ["npm:4.15.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/@vee-validate-zod-npm-4.15.1-a5a5614ad9-10c0.zip/node_modules/@vee-validate/zod/",\
+        "packageDependencies": [\
+          ["@vee-validate/zod", "npm:4.15.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:4.15.1", {\
+        "packageLocation": "./.yarn/__virtual__/@vee-validate-zod-virtual-77b85e4bab/4/.yarn/berry/cache/@vee-validate-zod-npm-4.15.1-a5a5614ad9-10c0.zip/node_modules/@vee-validate/zod/",\
+        "packageDependencies": [\
+          ["@vee-validate/zod", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:4.15.1"],\
+          ["@types/zod", null],\
+          ["type-fest", "npm:4.41.0"],\
+          ["vee-validate", "virtual:77b85e4babc94541739d7d7a933c35d5dd9d47712a468cd0c60d40cfc2f3e461b52f66a883d218d01d6f79ef17fd038d62e3f3e36ff3d2e499587dbfd71f799f#npm:4.15.1"],\
+          ["zod", "npm:4.2.1"]\
+        ],\
+        "packagePeers": [\
+          "@types/zod",\
+          "zod"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -4352,6 +4379,7 @@ const RAW_RUNTIME_STATE =
           ["@mdi/font", "npm:7.4.47"],\
           ["@tsconfig/node24", "npm:24.0.3"],\
           ["@types/node", "npm:24.10.4"],\
+          ["@vee-validate/zod", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:4.15.1"],\
           ["@vitejs/plugin-vue", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:6.0.3"],\
           ["@vue/eslint-config-prettier", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:10.2.0"],\
           ["@vue/eslint-config-typescript", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:14.6.0"],\
@@ -4365,12 +4393,14 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.6.2"],\
           ["sass", "npm:1.97.1"],\
           ["typescript", "patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=8c6c40"],\
+          ["vee-validate", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:4.15.1"],\
           ["vite", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:7.3.0"],\
           ["vite-plugin-vue-devtools", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:8.0.5"],\
           ["vue", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:3.5.26"],\
           ["vue-router", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:4.6.4"],\
           ["vue-tsc", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:3.2.1"],\
-          ["vuetify", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:3.11.4"]\
+          ["vuetify", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:3.11.4"],\
+          ["zod", "npm:4.2.1"]\
         ],\
         "linkType": "SOFT"\
       }]\
@@ -4745,6 +4775,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["type-fest", [\
+      ["npm:4.41.0", {\
+        "packageLocation": "../../../.yarn/berry/cache/type-fest-npm-4.41.0-31a6ce52d8-10c0.zip/node_modules/type-fest/",\
+        "packageDependencies": [\
+          ["type-fest", "npm:4.41.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["typescript", [\
       ["patch:typescript@npm%3A5.9.3#optional!builtin<compat/typescript>::version=5.9.3&hash=8c6c40", {\
         "packageLocation": "../../../.yarn/berry/cache/typescript-patch-51b3aa13c9-10c0.zip/node_modules/typescript/",\
@@ -4863,6 +4902,45 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/util-deprecate-npm-1.0.2-e3fe1a219c-10c0.zip/node_modules/util-deprecate/",\
         "packageDependencies": [\
           ["util-deprecate", "npm:1.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["vee-validate", [\
+      ["npm:4.15.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/vee-validate-npm-4.15.1-a3a2d55d5f-10c0.zip/node_modules/vee-validate/",\
+        "packageDependencies": [\
+          ["vee-validate", "npm:4.15.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:4.15.1", {\
+        "packageLocation": "./.yarn/__virtual__/vee-validate-virtual-eb70fcbfe9/4/.yarn/berry/cache/vee-validate-npm-4.15.1-a3a2d55d5f-10c0.zip/node_modules/vee-validate/",\
+        "packageDependencies": [\
+          ["vee-validate", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:4.15.1"],\
+          ["@types/vue", null],\
+          ["@vue/devtools-api", "npm:7.7.9"],\
+          ["type-fest", "npm:4.41.0"],\
+          ["vue", "virtual:32e6d9376cd04a0f881a6cf9cfb1564bac68b08f0c825017cc10117fb755aea14c379c9f2be8338a5eafed7609ba8c77d9f7755f8f258393232a9e8adbb87b85#npm:3.5.26"]\
+        ],\
+        "packagePeers": [\
+          "@types/vue",\
+          "vue"\
+        ],\
+        "linkType": "HARD"\
+      }],\
+      ["virtual:77b85e4babc94541739d7d7a933c35d5dd9d47712a468cd0c60d40cfc2f3e461b52f66a883d218d01d6f79ef17fd038d62e3f3e36ff3d2e499587dbfd71f799f#npm:4.15.1", {\
+        "packageLocation": "./.yarn/__virtual__/vee-validate-virtual-ad38a56754/4/.yarn/berry/cache/vee-validate-npm-4.15.1-a3a2d55d5f-10c0.zip/node_modules/vee-validate/",\
+        "packageDependencies": [\
+          ["vee-validate", "virtual:77b85e4babc94541739d7d7a933c35d5dd9d47712a468cd0c60d40cfc2f3e461b52f66a883d218d01d6f79ef17fd038d62e3f3e36ff3d2e499587dbfd71f799f#npm:4.15.1"],\
+          ["@types/vue", null],\
+          ["@vue/devtools-api", "npm:7.7.9"],\
+          ["type-fest", "npm:4.41.0"],\
+          ["vue", null]\
+        ],\
+        "packagePeers": [\
+          "@types/vue",\
+          "vue"\
         ],\
         "linkType": "HARD"\
       }]\
@@ -5314,6 +5392,15 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "../../../.yarn/berry/cache/yocto-queue-npm-0.1.0-c6c9a7db29-10c0.zip/node_modules/yocto-queue/",\
         "packageDependencies": [\
           ["yocto-queue", "npm:0.1.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["zod", [\
+      ["npm:4.2.1", {\
+        "packageLocation": "../../../.yarn/berry/cache/zod-npm-4.2.1-517219402d-10c0.zip/node_modules/zod/",\
+        "packageDependencies": [\
+          ["zod", "npm:4.2.1"]\
         ],\
         "linkType": "HARD"\
       }]\
